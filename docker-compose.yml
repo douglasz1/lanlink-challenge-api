@@ -1,2 +1,11 @@
-version: '3'
+version: '3.8'
+
 services:
+  node:
+    build: 
+      context: .
+      dockerfile: Dockerfile      
+    image: node
+    container_name: nodejs
+    ports:
+      - "8081:8081"
